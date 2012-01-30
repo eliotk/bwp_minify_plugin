@@ -12,7 +12,7 @@ License: GPLv3
 */
 
 // In case someone integrates this plugin in a theme
-if (class_exists('BWP_MINIFY'))
+if (class_exists('BWP_MINIFY') || $_SERVER[HTTPS] == 'on')
 	return;
 
 // Frontend
